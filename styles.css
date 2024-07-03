@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #ffffff;
+    --color-secundario: #0A3871;
+    --color-terciario: #609ED4;
+    --fuente-inter: 'Inter', sans-serif;
+}
+body {
+    margin: 0;
+    font-family: var(--fuente-inter);
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    width: 10%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 1% 0;
+    background-color: var(--color-primario);
+}
+footer {
+    background-color: var(--color-secundario);
+    color: black;
+    text-align: center;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left, .right {
+    flex: 1;
+    padding: 1em;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+.inputText{
+    padding: 3vh; 
+    font-size: 3vh; 
+    border-color: var(--color-primario);
+    color: var(--color-secundario);
+    border-radius: 1vh;
+    width: 100%;
+    height: 48vh; 
+    box-sizing: border-box;
+}
+.inputText:focus {
+    outline: none;
+}
+.inputText::placeholder {
+    color: var(--color-secundario);
+}
+.div__alerta {
+    align-content: center;
+    color: gray;
+    padding: 5% 1% 1% 1%;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.btn__encriptar{
+    color: var(--color-primario);
+    font-size: 16px;
+    padding: 18px 39px;
+    border-radius: 24px;
+    background: var(--color-secundario);
+    border: solid;
+    width: 30%;
+}
+.btn__desencriptar{
+    color: var(--color-secundario);
+    font-size: 16px;
+    padding: 18px 39px; 
+    border-radius: 24px;
+    background: var(--color-primario);
+    border: 2px solid var(--color-terciario);
+    width: 30%;
+}
+.right {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.image {
+    margin-top: 2em;
+}
+img {
+    width: 80%;
+}
+.copy_button {
+    width: 50%;
+    margin-top: 1em;
+    color: var(--color-secundario);
+    font-size: 16px;
+    padding: 18px 39px; 
+    border-radius: 24px;
+    background: var(--color-primario);
+    border: 2px solid var(--color-terciario);
+}
+#copyButton {
+    display: none;
+}
+
+.footer_logo {
+    display: flex;
+    
+    align-items: center;
+    gap: 0.5em; /* Espacio entre el texto y la imagen */
+}
+
+.footer_logo a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em; /* Espacio entre el texto y la imagen */
+}
+
+.logo_github {
+    width: 30px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons button {
+        margin-bottom: 0.5em;
+    }
+    .btn__encriptar{
+        width: 50%;
+    }
+    .btn__desencriptar{
+        width: 50%;
+    }
+}
