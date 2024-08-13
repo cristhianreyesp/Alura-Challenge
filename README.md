@@ -1,14 +1,13 @@
 <h1 align="center"> Encriptador y Desencriptador de Texto</h1>
 Challenge de Alura de encriptar texto que es desarolladon con HTML, CSS y JavaScript.
- 
 
 
-
- :hammer:Funciones del Proyecto
+:hammer:Funciones del Proyecto
 
 - `Funcionalidad 1`: Encriptar Texto.
-- `Funcionalidad 2`: Desencriptar Texto. 
+- `Funcionalidad 2`: Desencriptar Texto.
 - `Funcionalidad 3`: Boton para poder copiar el texto.
+
 <h2 align="center"> Visualizacion en web</h2>
 
 <img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/db2a5696-7d3d-4802-9f69-afc8eb40413e" alt="resolucionIpad" width="800">

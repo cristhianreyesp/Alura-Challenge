@@ -1,5 +1,5 @@
 function encriptar() {
-    var input = document.getElementById("inputText").value.toLowerCase();
+    var input = document.getElementById("textoEntrada").value.toLowerCase();
     var encriptado = input.replace(/e/g, "enter")
                          .replace(/i/g, "imes")
                          .replace(/a/g, "ai")
@@ -7,10 +7,11 @@ function encriptar() {
                          .replace(/u/g, "ufat");
     
     mostarResultado(encriptado);
+    mostrarAlertaEncriptado();
 }
 
 function desencriptar() {
-    var mensajeEncriptado = document.getElementById("inputText").value.toLowerCase();
+    var mensajeEncriptado = document.getElementById("textoEntrada").value.toLowerCase();
     var desencriptado = mensajeEncriptado.replace(/enter/g, "e")
                                     .replace(/imes/g, "i")
                                     .replace(/ai/g, "a")
@@ -18,6 +19,7 @@ function desencriptar() {
                                     .replace(/ufat/g, "u");
     
     mostarResultado(desencriptado);
+    mostrarAlertaDesencriptado();
 }
 
 function mostarResultado(text) {
@@ -42,6 +44,6 @@ function mostarResultado(text) {
 function copiarTexto() {
     var textoCopiado = document.getElementById("mensaje").textContent;
     navigator.clipboard.writeText(textoCopiado)
-        .then(() => console.log("El texto fue copiado exitosamente."))
+        .then(() => mostrarAlertaCopiado())
         .catch(err => console.error('Error al copiar: ', err));
 }
