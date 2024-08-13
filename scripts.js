@@ -44,6 +44,10 @@ function mostarResultado(text) {
 function copiarTexto() {
     var textoCopiado = document.getElementById("mensaje").textContent;
     navigator.clipboard.writeText(textoCopiado)
-        .then(() => mostrarAlertaCopiado())
+        .then(() => { mostrarAlertaCopiado();
+        var textoEntrada = document.getElementById("textoEntrada");
+        textoEntrada.value = '';
+        textoEntrada.focus();
+    } )
         .catch(err => console.error('Error al copiar: ', err));
 }
