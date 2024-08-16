@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Alura Latam - Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <div class="main">
+        <header>
+            <img src="./img/Logo.png" alt="Logo Alura">
+        </header>
+        <div class="content">
+            <div class="left">
+                <textarea id="textoEntrada" class="inputText" rows="10" placeholder="Ingrese el texto aqui...."></textarea>
+                <div class="div__alerta">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z"/>
+                        </svg> 
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button class="btn__encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn__desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image">
+                    <img id="imagenVacia" src="img/Muneco.png" alt="IMAGEN">
+                </div>
+                <strong id="mensaje1">Ningún mensaje fue encontrado</strong>
+                <p id="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="copy_button hidden" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer_logo">
+                <p>Curso Alura - Cristhian Reyes</p>
+                <a href="https://github.com/cristhianreyesp">
+                    <img class="logo_github" src="img/github.png" alt="GitHub Logo">
+                    Github
+                </a>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="scripts.js"></script>
+    <script src="alerts.js"></script>
+</body>
+</html>

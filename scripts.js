@@ -6,7 +6,7 @@ function encriptar() {
                          .replace(/o/g, "ober")
                          .replace(/u/g, "ufat");
     
-    mostarResultado(encriptado);
+    mostrarResultado(encriptado);
     mostrarAlertaEncriptado();
 }
 
@@ -18,36 +18,39 @@ function desencriptar() {
                                     .replace(/ober/g, "o")
                                     .replace(/ufat/g, "u");
     
-    mostarResultado(desencriptado);
+    mostrarResultado(desencriptado);
     mostrarAlertaDesencriptado();
 }
 
-function mostarResultado(text) {
+function mostrarResultado(texto) {
+    var txtResultado = document.querySelector(".txtresultado");
     var mensaje = document.getElementById("mensaje");
-    var mensaje1 = document.getElementById("mensaje1");
     var imagenVacia = document.getElementById("imagenVacia");
     var botonCopiar = document.getElementById("botonCopiar");
 
-    if (text === "") {
+    if (texto === "") {
         mensaje.textContent = "Ningún mensaje fue encontrado.";
-        mensaje1.textContent = "No hay ningún mensaje.";
+        mensaje.style.display = "block";
+        txtResultado.classList.add("hidden");
         imagenVacia.style.display = "block";
-        botonCopiar.style.display = "none";
+        botonCopiar.classList.add("hidden");
     } else {
-        mensaje.textContent = text;
-        mensaje1.style.display = "none";
+        txtResultado.value = texto;
+        mensaje.style.display = "none";
+        txtResultado.classList.remove("hidden");
         imagenVacia.style.display = "none";
-        botonCopiar.style.display = "block";
+        botonCopiar.classList.remove("hidden");
     }
 }
 
 function copiarTexto() {
-    var textoCopiado = document.getElementById("mensaje").textContent;
+    var textoCopiado = document.querySelector(".txtresultado").value;
     navigator.clipboard.writeText(textoCopiado)
-        .then(() => { mostrarAlertaCopiado();
-        var textoEntrada = document.getElementById("textoEntrada");
-        textoEntrada.value = '';
-        textoEntrada.focus();
-    } )
+        .then(() => {
+            mostrarAlertaCopiado();
+            var textoEntrada = document.getElementById("textoEntrada");
+            textoEntrada.value = '';
+            textoEntrada.focus();
+        })
         .catch(err => console.error('Error al copiar: ', err));
 }
