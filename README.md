@@ -10,15 +10,15 @@ Challenge de Alura de encriptar texto que es desarolladon con HTML, CSS y JavaSc
 
 <h2 align="center"> Visualizacion en web</h2>
 
-<img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/db2a5696-7d3d-4802-9f69-afc8eb40413e" alt="resolucionIpad" width="800">
-<img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/9356a836-ded8-436b-8139-1f20c2c9c452" alt="resolucionIpad" width="800">
+<img src="https://github.com/user-attachments/assets/20b12e25-3236-41b3-b2a5-677f03c999d2" alt="resolucionIpad" width="800">
+<img src="https://github.com/user-attachments/assets/6450914d-bc2e-4485-8eb6-d32672fcc384" alt="resolucionIpad" width="800">
 
 <h2 align="center"> Visualizacion en Ipad</h2>
 
-<img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/6bb880d8-90f4-4d00-9bcb-de3855cca289e" alt="resolucionIpad" width="400">
-<img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/b37c091a-6026-4f02-92fd-2bdfc5bb0808" alt="resolucionIpad" width="400">
+<img src="https://github.com/user-attachments/assets/7636b1de-d362-4a0f-bae1-e9eb0e67df62" alt="resolucionIpad" width="400">
+<img src="https://github.com/user-attachments/assets/1ed794e7-8d8b-458b-a498-18ba9fb09192" alt="resolucionIpad" width="400">
 
 <h2 align="center"> Visualizacion en Celular</h2>
 
-<img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/d10379a0-0227-4d11-844e-6b7e34747432" alt="resolucionIpad" width="400">
-<img src="https://github.com/cristhianreyesp/Alura-Challenge/assets/100064789/5e077731-ee51-47be-a233-33cce69299ad" alt="resolucionIpad" width="400">
+<img src="https://github.com/user-attachments/assets/488367e5-4910-4725-a0b5-2a90b7368a14" alt="resolucionIpad" width="400">
+<img src="https://github.com/user-attachments/assets/24da9b5c-d883-4163-8137-de5a7d273ea7" alt="resolucionIpad" width="400">
